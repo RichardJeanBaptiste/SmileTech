@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 10px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container p {
+    flex-shrink: 0;
+}
+
+.divider {
+    width: 3px;
+    height: 30px;
+    background-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: lightgrey;
+}
+
+.endnav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 7%;
+}
+
+.endnav div {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(211, 211, 211, 0.2);
+}
+
+.endnav div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
