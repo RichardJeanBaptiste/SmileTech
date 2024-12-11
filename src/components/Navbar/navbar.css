@@ -2,30 +2,38 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    gap: 10px;
+    gap: 20px;
     white-space: nowrap;
     position: relative;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .container p {
     flex-shrink: 0;
 }
 
+.container p:hover {
+    color: rgb(100, 156, 251);
+}
+
 .divider {
-    width: 3px;
-    height: 30px;
+    width: 1.5px;
+    height: 24px;
     background-color: gray;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0px;
     border-radius: 5px;
     border-color: lightgrey;
+    margin-top: .90%;
 }
 
 .endnav{
     position: absolute;
     display: flex;
     flex-direction: row;
+    top: 13%;
     right: 7%;
+    gap: 20px;
 }
 
 .endnav div {
@@ -39,5 +47,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.endnav div div:hover {
+    cursor: pointer;
+}
+
+.avi_container {
+    margin-top: -8%;
+}
+
+.avi_container:hover {
+    cursor: pointer;
 }
 
