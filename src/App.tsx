@@ -10,8 +10,9 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Reminder/>
       <Schedule/>
+      <Reminder/>
+      
       <Income/>
     </>
   )
