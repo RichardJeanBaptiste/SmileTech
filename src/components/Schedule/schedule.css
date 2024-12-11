@@ -1,0 +1,7 @@
+.sched_container {
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    height: 80%;
+    border-radius: 20px;
+}

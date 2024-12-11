@@ -10,10 +10,13 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Schedule/>
+      <div style={{ width: '100vw', height: '70vh', position: 'relative'}}>
+        <Schedule/>
+        <Income/>
+      </div>
       <Reminder/>
       
-      <Income/>
+      
     </>
   )
 }
