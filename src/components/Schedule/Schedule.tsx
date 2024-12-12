@@ -3,9 +3,10 @@ import './schedule.css';
 function Schedule() {
     return (
         <div className='sched_container'>
-            <div style={{ display: 'flex', flexDirection: 'row'}}>
+            <div className='sched_header'>
                 <p>My Schedule</p>
-                <div style={{ display: 'flex', flexDirection: 'row', backgroundColor: 'rgba(218, 215, 205, 0.2)'}}>
+                
+                <div className='date_filter'>
                     <p>Weekdays</p>
                     <p>Week</p>
                     <p>Month</p>
