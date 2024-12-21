@@ -7,6 +7,7 @@ import Income from './components/Income/Income';
 import './App.css'
 
 function App() {
+
   return (
     <>
       <Navbar/>
