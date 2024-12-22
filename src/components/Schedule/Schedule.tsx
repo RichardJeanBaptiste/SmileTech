@@ -33,9 +33,9 @@ function Schedule() {
             <div className='sched_header'>
                 <p>My Schedule</p>
                 <div className='date_filter'>
-                    <p onClick={() => changeView(0)}>Weekdays</p>
-                    <p onClick={() => changeView(1)}>Week</p>
-                    <p onClick={() => changeView(2)}>Month</p>
+                    <p className={view === 0 ? 'active' : ''} onClick={() => changeView(0)}>Weekdays</p>
+                    <p className={view === 1 ? 'active' : ''} onClick={() => changeView(1)}>Week</p>
+                    <p className={view === 2 ? 'active' : ''} onClick={() => changeView(2)}>Month</p>
                 </div>
             </div>
             

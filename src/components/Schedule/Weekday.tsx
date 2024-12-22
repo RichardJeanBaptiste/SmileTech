@@ -1,10 +1,5 @@
-/**
- * create a 5 X 24 grid
- *    
- * 
- * 
- */
-
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useContext, useEffect, useState} from "react";
 //import { DateContext } from "./DateContext";
 import { my_schedule } from "../../../Dummies";
@@ -17,15 +12,18 @@ type RowProps = {
 function Weekday() {
 
     const [schedule, SetSchedule] = useState([]);
+    const [day, SetDay] = useState(0);
+
     useEffect(() => {
-        console.log(my_schedule());
+        //console.log(my_schedule());
+        SetDay(new Date().getDay());
     },[]);
 
     const Cell = () => {
         return (
             <div className="cell">
-                <div>
-                    <img src={olay} width={50} height={50} />
+                <div className="inner_cell">
+                    <img src={olay} width={40} height={40} style={{borderRadius: '50%'}}/>
                     <p>Test Event</p>
                 </div>   
             </div>
@@ -50,11 +48,12 @@ function Weekday() {
     return (
         <div className="weekday_container">
                 <p></p>
-                <p className="item1">Mon</p>
-                <p className="item1">Tue</p>
-                <p className="item1">Wed</p>
-                <p className="item1">Thu</p>
-                <p className="item1">Fri</p>
+                <p className={day === 1 ? 'active' : ''}>Mon</p>
+                <p className={day === 2 ? 'active' : ''}>Tue</p>
+                <p className={day === 3 ? 'active' : ''}>Wed</p>
+                <p className={day === 4 ? 'active' : ''}>Thu</p>
+                <p className={day === 5 ? 'active' : ''}>Fri</p>
+                <Row time="7:00"/>
                 <Row time="8:00"/>
                 <Row time="9:00"/>
                 <Row time="10:00"/>

@@ -1,6 +1,11 @@
+import './income.css';
+
 function Income() {
     return (
-        <p>Income</p>
+        <div className='income_root'>
+            <p>Income</p>
+        </div>
+        
     )
 }
 
