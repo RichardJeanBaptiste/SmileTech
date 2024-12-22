@@ -27,3 +27,24 @@
     position: absolute;
     right: 3%;
 }
+
+.weekday_container {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   row-gap: 10px;
+   overflow-y: scroll;
+}
+
+.item1 {
+    
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    margin-left: -15%;
+}
+

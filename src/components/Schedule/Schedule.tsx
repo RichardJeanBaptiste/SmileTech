@@ -32,7 +32,6 @@ function Schedule() {
         <div className='sched_container'>
             <div className='sched_header'>
                 <p>My Schedule</p>
-                
                 <div className='date_filter'>
                     <p onClick={() => changeView(0)}>Weekdays</p>
                     <p onClick={() => changeView(1)}>Week</p>

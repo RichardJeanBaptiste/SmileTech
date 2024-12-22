@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Reminder from './components/Reminder/Reminder';
 import Schedule from './components/Schedule/Schedule';
 import Income from './components/Income/Income';
+import { DateProvider } from './components/Schedule/DateContext';
 import './App.css'
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <>
       <Navbar/>
       <div style={{ width: '100vw', height: '70vh', position: 'relative'}}>
-        <Schedule/>
+        <DateProvider>
+          <Schedule/>
+        </DateProvider>
         <Income/>
       </div>
       <Reminder/>
