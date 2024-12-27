@@ -1,9 +1,9 @@
 .sched_container {
     position: absolute;
-    top: 5%;
+    top: 0%;
     background-color: white;
     width: 50%;
-    height: 85%;
+    height: 69%;
     margin-left: 1%;
     border-radius: 20px;
     overflow-y: scroll;

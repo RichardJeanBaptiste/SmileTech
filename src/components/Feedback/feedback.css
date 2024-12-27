@@ -1,9 +1,9 @@
 .feedback_root {
     position: absolute;
-    top: 5%;
-    right: 25%;
-    width: 23%;
-    height: 35%;
+    top: 0%;
+    right: 26%;
+    width: 22%;
+    height: 24%;
     border-radius: 20px;
     background-color: rgba(211,211,211, 0.4);
 }

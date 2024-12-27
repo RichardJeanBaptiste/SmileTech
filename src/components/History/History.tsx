@@ -1,8 +1,9 @@
+import './history.css';
 
 const History = () => {
     return (
-        <div>
-            <p>History</p>
+        <div className="history_root">
+            <p>Visit History</p>
         </div>
     )
 }

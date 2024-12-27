@@ -1,9 +1,9 @@
 .income_root {
     position: absolute;
-    top: 5%;
-    right: 1%;
+    top: 0%;
+    right: 3%;
     width: 22%;
-    height: 35%;
+    height: 24%;
     border-radius: 20px;
     background-color: rgba(211,211,211, 0.4);
 }
